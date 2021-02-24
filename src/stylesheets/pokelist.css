@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+}
+
+.pokeCard {
+    list-style: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
