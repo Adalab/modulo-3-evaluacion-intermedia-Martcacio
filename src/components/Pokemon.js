@@ -1,6 +1,7 @@
 import '../stylesheets/pokemon.css';
 import React, { useState } from 'react';
 
+
 function Pokemon(props){
     const [shake, setshake] = useState("shake-slow");
     const handleShake = () => {
@@ -11,28 +12,34 @@ function Pokemon(props){
       }
     };
 
-    /* const typeColor=()=>{
-      if (poketype === "fire"){
-        className="fire";
+    let typeColor="";
+      if (props.pokemons.types === "fire"){
+        typeColor="fire";
       }
-    elseif(poketype === "bug"){
-      className="bug";
+    else if(props.pokemons.types === "bug"){
+      typeColor="bug";
     }
-    elseif(poketype === "water"){
-      className="water";
+    else if(props.pokemons.types ==="flying" ){
+      typeColor="flying";
     }
-    elseif(poketype === "poison"){
-      className="poison";
+    else if(props.pokemons.types === "water"){
+      typeColor="water";
+    }
+    else if(props.pokemons.types ==="poison"){
+      typeColor="poison";
     }
     else{
-      className="grass";
-    }
-  } */
-    const fichasPokemon = props.pokemons.types.map((type, index)=> {
+      typeColor="grass";
+    
+  } 
+
   
+    const fichasPokemon = props.pokemons.types.map((type, index)=> {
+
+   
         return (
          
-        <li key={index} poketype="types" className="pokeListTypes fire">
+        <li key={index} poketype="types" className={`pokeListTypes ${typeColor}`}>
             {type}</li>
     )}
     )
