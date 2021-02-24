@@ -1,17 +1,20 @@
 import '../stylesheets/pokemon.css';
 
 function Pokemon(props){
-    const fichasPokemon = props.data.types.map((types)=> {return (
-        <li key={props.data.id} pokeType="types" class="pokeList">
+    const fichasPokemon = props.data.types.map((types, i)=> {
+  
+        return (
+        <li key={i} pokeType="types" class="pokeListTypes">
             {types}</li>
     )}
     )
     return(
         <article class="PokeCard">
+            <p class="pokeId">{/* <img src="https://www.dlf.pt/dfpng/middlepng/597-5970982_pokeball-pixel-png-transparent-png.png"></img> */} {"00" +props.data.id}</p>
         <img src={props.data.url}/>
        <h2 class="pokename">{props.data.name}</h2>
 
-       <ul>
+       <ul class="poketype">
        {fichasPokemon}
         </ul>
     

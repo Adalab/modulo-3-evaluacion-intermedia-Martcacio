@@ -7,7 +7,13 @@
     list-style: none;
 }
 
+.pokeList {
+    list-style: none;
+    width: 250px;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }

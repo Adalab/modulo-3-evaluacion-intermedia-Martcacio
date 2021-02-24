@@ -1,11 +1,19 @@
 .PokeCard {
-    border: 2px solid grey;
+    border: 3px solid black;
     border-radius: 20px;
     height: 100px;
     margin-left: 10px;
+    margin-bottom: 70px;
 }
 
-.pokeList {
+.pokeId {
+    position: absolute;
+    transform: translateX(175px);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+.pokeListTypes {
     list-style: none;
     width: 250px;
 }
@@ -14,4 +22,11 @@
     font-size: 20px;
     text-transform: capitalize;
     font-family: 'Press Start 2P', cursive;
+}
+
+.poketype {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid grey;
+    border-radius: 20px;
 }
