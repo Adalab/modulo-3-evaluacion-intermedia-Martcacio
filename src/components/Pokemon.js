@@ -13,19 +13,16 @@ function Pokemon(props){
     };
 
     let typeColor="";
-      if (props.pokemons.types === "fire"){
+      if (props.pokemons.types.includes ("fire")){
         typeColor="fire";
       }
-    else if(props.pokemons.types === "bug"){
+    else if(props.pokemons.types.includes ("bug")){
       typeColor="bug";
     }
-    else if(props.pokemons.types ==="flying" ){
-      typeColor="flying";
-    }
-    else if(props.pokemons.types === "water"){
+    else if(props.pokemons.types.includes ("water")){
       typeColor="water";
     }
-    else if(props.pokemons.types ==="poison"){
+    else if(props.pokemons.types.includes ("poison")){
       typeColor="poison";
     }
     else{
