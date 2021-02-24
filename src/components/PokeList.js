@@ -3,7 +3,7 @@ import '../stylesheets/pokelist.css';
 
 function PokeList(props){
     const fichas = props.pokemons.map((ficha)=> {return (
-        <li key={props.pokemons.id} className="pokeList">
+        <li key={ficha.id} className="pokeList">
             <Pokemon pokemons={ficha}/></li>
     )}
     )

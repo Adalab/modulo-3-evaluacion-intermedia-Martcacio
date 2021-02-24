@@ -12,28 +12,30 @@ function Pokemon(props){
       }
     };
 
+    const fichasPokemon = props.pokemons.types.map((type, index)=> {
+
     let typeColor="";
-      if (props.pokemons.types.includes ("fire")){
-        typeColor="fire";
-      }
-    else if(props.pokemons.types.includes ("bug")){
-      typeColor="bug";
+    if 
+      (type.includes ("bug")){
+        typeColor="bug";}
+    else if(type.includes ("fire")){
+      typeColor="fire"; 
     }
-    else if(props.pokemons.types.includes ("water")){
+    else if(type.includes ("flying")){
+      typeColor="flying";
+    }
+    else if(type.includes ("water")){
       typeColor="water";
     }
-    else if(props.pokemons.types.includes ("poison")){
+    else if(type.includes ("poison")){
       typeColor="poison";
     }
     else{
       typeColor="grass";
-    
   } 
 
   
-    const fichasPokemon = props.pokemons.types.map((type, index)=> {
-
-   
+    
         return (
          
         <li key={index} poketype="types" className={`pokeListTypes ${typeColor}`}>
