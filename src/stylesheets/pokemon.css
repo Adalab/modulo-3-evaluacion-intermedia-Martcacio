@@ -14,8 +14,19 @@
 }
 
 .pokeListTypes {
+    margin-bottom: 5px;
+    text-align: center;
     list-style: none;
-    width: 250px;
+    width: 60px;
+    height: 20px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    transform: translate(120px, -123px);
+}
+
+.pokeball {
+    height: 10px;
+    width: 10px;
 }
 
 .pokename {
@@ -26,7 +37,5 @@
 
 .poketype {
     display: flex;
-    flex-direction: row;
-    border: 2px solid grey;
-    border-radius: 20px;
+    flex-direction: column;
 }

@@ -10,7 +10,7 @@ function Pokemon(props){
     )
     return(
         <article class="PokeCard">
-            <p class="pokeId">{/* <img src="https://www.dlf.pt/dfpng/middlepng/597-5970982_pokeball-pixel-png-transparent-png.png"></img> */} {"00" +props.data.id}</p>
+            <p class="pokeId">{<img class="pokeball"src="https://www.dlf.pt/dfpng/middlepng/597-5970982_pokeball-pixel-png-transparent-png.png"></img>} {"00" +props.data.id}</p>
         <img src={props.data.url}/>
        <h2 class="pokename">{props.data.name}</h2>
 
