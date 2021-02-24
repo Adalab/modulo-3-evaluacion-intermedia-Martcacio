@@ -1,12 +1,17 @@
 .PokeCard {
     border: 2px solid grey;
     border-radius: 20px;
+    height: 100px;
+    margin-left: 10px;
 }
 
 .pokeList {
     list-style: none;
+    width: 250px;
 }
 
 .pokename {
-    text-transform: capitalize
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Press Start 2P', cursive;
 }

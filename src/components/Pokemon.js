@@ -2,7 +2,7 @@ import '../stylesheets/pokemon.css';
 
 function Pokemon(props){
     const fichasPokemon = props.data.types.map((types)=> {return (
-        <li id={props.data.id} pokeType="types" class="pokeList">
+        <li key={props.data.id} pokeType="types" class="pokeList">
             {types}</li>
     )}
     )
