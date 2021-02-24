@@ -2,15 +2,15 @@ import Pokemon from './Pokemon.js';
 import '../stylesheets/pokelist.css';
 
 function PokeList(props){
-    const fichas = props.data.map((ficha)=> {return (
-        <li key={props.id} class="pokeList">
-            <Pokemon data={ficha}/></li>
+    const fichas = props.pokemons.map((ficha)=> {return (
+        <li key={props.pokemons.id} className="pokeList">
+            <Pokemon pokemons={ficha}/></li>
     )}
     )
     return(
         <>
-        <h1 class="title">Mi Pokedex</h1>
-        <ul class="cards">
+        <h1 className="title">Mi Pokedex</h1>
+        <ul className="cards">
         {fichas}
         </ul>
     

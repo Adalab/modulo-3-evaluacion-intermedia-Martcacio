@@ -14,12 +14,12 @@
 }
 
 .pokeListTypes {
+    font-size: 16px;
     margin-bottom: 5px;
     text-align: center;
     list-style: none;
     width: 60px;
     height: 20px;
-    border: 2px solid grey;
     border-radius: 20px;
     transform: translate(120px, -123px);
 }
@@ -38,4 +38,24 @@
 .poketype {
     display: flex;
     flex-direction: column;
+}
+
+.fire {
+    background-color: red;
+}
+
+.bug {
+    background-color: chocolate;
+}
+
+.water {
+    background-color: darkcyan;
+}
+
+.poison {
+    background-color: darkorchid;
+}
+
+.grass {
+    background-color: forestgreen;
 }

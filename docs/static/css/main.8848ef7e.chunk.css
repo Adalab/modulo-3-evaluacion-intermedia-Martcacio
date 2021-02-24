@@ -1,2 +1,66 @@
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace}.PokeCard{border:3px solid #000;border-radius:20px;height:100px;margin-left:10px;margin-bottom:70px}.pokeId{position:absolute;transform:translateX(175px);font-family:"Press Start 2P",cursive;font-size:8px}.pokeListTypes{list-style:none;width:250px}.pokename{font-size:20px;text-transform:capitalize;font-family:"Press Start 2P",cursive}.poketype{display:flex;flex-direction:row;border:2px solid grey;border-radius:20px}.title{text-align:center;font-family:"Press Start 2P",cursive}.pokeCard,.pokeList{list-style:none}.pokeList{width:250px}.cards{display:flex;flex-direction:row;flex-wrap:wrap}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+.PokeCard {
+    border: 3px solid #000;
+    border-radius: 20px;
+    height: 100px;
+    margin-left: 10px;
+    margin-bottom: 70px
+}
+
+.pokeId {
+    position: absolute;
+    transform: translateX(175px);
+    font-family: "Press Start 2P", cursive;
+    font-size: 8px
+}
+
+.pokeListTypes {
+    list-style: none;
+    width: 250px
+}
+
+.pokename {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Press Start 2P", cursive
+}
+
+.poketype {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid grey;
+    border-radius: 20px
+}
+
+.title {
+    text-align: center;
+    font-family: "Press Start 2P", cursive
+}
+
+.pokeCard,
+.pokeList {
+    list-style: none
+}
+
+.pokeList {
+    width: 250px
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+
 /*# sourceMappingURL=main.8848ef7e.chunk.css.map */

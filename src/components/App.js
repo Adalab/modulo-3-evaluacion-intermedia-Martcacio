@@ -4,9 +4,10 @@ import data from '../data/data.json'
 
 
 function App() {
+const [pokemons, setPokemons]= useState(data);
 
   return(
-  <PokeList data={data}/>
+  <PokeList pokemons={pokemons}/>
   );
 
   }
