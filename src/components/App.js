@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-import PokeList from './PokeList.js';
-import data from '../data/data.json'
-
+import React, { useState } from "react";
+import PokeList from "./PokeList";
+import data from "../data/data.json";
 
 function App() {
-const [pokemons, setPokemons]= useState(data);
+    const [pokemons, setPokemons] = useState(data);
 
-  return(
-  <PokeList pokemons={pokemons}/>
-  );
-
-  }
-
+    return <PokeList pokemons = { pokemons }
+    />;
+}
 
 export default App;
